@@ -1,0 +1,6 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:01.608     3M / 110M  WARN    General                 (kmer_coverage_model.cpp   : 218)   Too many erroneous kmers, the estimates might be unreliable
+ * 0:00:15.565     3M / 110M  WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 2
+ * 0:00:15.566     3M / 110M  WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 2
+======= Warnings saved to /content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_spades/warnings.log

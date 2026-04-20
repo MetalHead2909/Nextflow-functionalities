@@ -1,0 +1,9 @@
+- "left reads":
+  - "/content/work/7d/8b4d28461f42820083195a20eab72d/WT_rep1_spades/corrected/WT_rep1_R1_trimmed.fastq.00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/content/work/7d/8b4d28461f42820083195a20eab72d/WT_rep1_spades/corrected/WT_rep1_R2_trimmed.fastq.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/content/work/7d/8b4d28461f42820083195a20eab72d/WT_rep1_spades/corrected/WT_rep1_R_unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"

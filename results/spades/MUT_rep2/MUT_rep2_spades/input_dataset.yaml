@@ -1,0 +1,7 @@
+- "left reads":
+  - "/content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_R1_trimmed.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_R2_trimmed.fastq.gz"
+  "type": "paired-end"

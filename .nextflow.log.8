@@ -1,0 +1,403 @@
+Apr-20 13:24:43.105 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile conda -process.cpus 4
+Apr-20 13:24:43.259 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Apr-20 13:24:43.300 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/ameyagarwal/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Apr-20 13:24:43.348 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-20 13:24:43.350 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-20 13:24:43.356 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-20 13:24:43.387 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Apr-20 13:24:43.768 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-20 13:24:43.816 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/nextflow.config
+Apr-20 13:24:43.820 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/nextflow.config
+Apr-20 13:24:43.866 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `conda`
+Apr-20 13:24:44.478 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [test, conda]
+Apr-20 13:24:44.505 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-20 13:24:44.506 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-20 13:24:44.538 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/ameyagarwal/.nextflow/secrets/store.json
+Apr-20 13:24:44.543 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@869d87c] - activable => nextflow.secret.LocalSecretsProvider@869d87c
+Apr-20 13:24:44.560 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-20 13:24:44.590 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [adoring_ride] DSL2 - revision: 3d4734fc10
+Apr-20 13:24:44.680 [main] DEBUG nextflow.Session - Session UUID: 25a515d0-1aa2-4d5e-9eab-87255f50d0ee
+Apr-20 13:24:44.680 [main] DEBUG nextflow.Session - Run name: adoring_ride
+Apr-20 13:24:44.681 [main] DEBUG nextflow.Session - Executor pool size: 8
+Apr-20 13:24:44.696 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-20 13:24:44.703 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-20 13:24:44.746 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 0
+  Created: 10-02-2026 14:37 UTC (09:37 GMT-04:00)
+  System: Mac OS X 15.6.1
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 25.0.2
+  Encoding: UTF-8 (UTF-8)
+  Process: 23556@Ameys-MacBook-Pro.local [127.0.0.1]
+  CPUs: 8 - Mem: 8 GB (80.5 MB) - Swap: 8 GB (1.5 GB)
+Apr-20 13:24:44.774 [main] DEBUG nextflow.Session - Work-dir: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work [Mac OS X]
+Apr-20 13:24:44.775 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/bin
+Apr-20 13:24:44.796 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-20 13:24:44.835 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Apr-20 13:24:44.839 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Apr-20 13:24:44.903 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-20 13:24:44.926 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Apr-20 13:24:45.047 [main] DEBUG nextflow.Session - Session start
+Apr-20 13:24:45.343 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-20 13:24:46.092 [main] INFO  nextflow.Nextflow - 
+Genomics Pipeline
+=======================
+samplesheet : /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/samplesheet.csv
+genome      : /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/ref/genome.fa
+outdir      : /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/results
+
+Apr-20 13:24:46.274 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-20 13:24:46.274 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 13:24:46.295 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-20 13:24:46.315 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Apr-20 13:24:46.320 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-20 13:24:46.367 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
+Apr-20 13:24:46.426 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-20 13:24:46.426 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 13:24:46.428 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'TRIMMOMATIC': maxForks=0; fair=false; array=0
+Apr-20 13:24:46.433 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-20 13:24:46.433 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 13:24:46.434 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SEQKIT_STATS': maxForks=0; fair=false; array=0
+Apr-20 13:24:46.441 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-20 13:24:46.441 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 13:24:46.443 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SPADES': maxForks=0; fair=false; array=0
+Apr-20 13:24:46.446 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, SALMON_INDEX, SPADES, SALMON_QUANT, SEQKIT_STATS, TRIMMOMATIC
+Apr-20 13:24:46.450 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Apr-20 13:24:46.464 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+Apr-20 13:24:46.465 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TRIMMOMATIC
+Apr-20 13:24:46.465 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SEQKIT_STATS
+Apr-20 13:24:46.465 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPADES
+Apr-20 13:24:46.468 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_220b5427b77cc45a: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/modules/salmon_index.nf
+  Script_99304bf5eaca6e76: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/modules/seqkit.nf
+  Script_ec62311c1b5cf037: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/main.nf
+  Script_80fc20ac74bd9ea9: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/modules/fastqc.nf
+  Script_dc44c5786e83f04f: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/modules/salmon_quant.nf
+  Script_27c73ee5790244bf: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/modules/spades.nf
+  Script_b51a6687f567c04c: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/modules/trim.nf
+Apr-20 13:24:46.468 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-20 13:24:46.468 [main] DEBUG nextflow.Session - Session await
+Apr-20 13:24:46.652 [Actor Thread 5] DEBUG nextflow.conda.CondaCache - mamba found local env for environment=bioconda::fastqc=0.12.1; path=/Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-49dea791c31ead673ed2e341e1c6d206
+Apr-20 13:24:46.652 [Actor Thread 3] DEBUG nextflow.conda.CondaCache - mamba found local env for environment=bioconda::trimmomatic=0.39; path=/Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-0046915b3d133c15377355218154162e
+Apr-20 13:24:46.789 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-20 13:24:46.792 [Task submitter] INFO  nextflow.Session - [0d/24716f] Submitted process > TRIMMOMATIC (MUT_rep2)
+Apr-20 13:24:51.272 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: TRIMMOMATIC (MUT_rep2); status: COMPLETED; exit: 0; error: -; workDir: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/0d/24716f4fd7d91ea1837c7ddba4d156]
+Apr-20 13:24:51.275 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-20 13:24:51.283 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-20 13:24:51.283 [Task submitter] INFO  nextflow.Session - [bb/ec14ab] Submitted process > FASTQC (MUT_rep2)
+Apr-20 13:24:51.327 [Actor Thread 1] INFO  nextflow.conda.CondaCache - Creating env using mamba: bioconda::spades=3.15.5 python=3.8 [cache /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-c6473d1636eff97bcfa259a23864cad0]
+Apr-20 13:24:51.345 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-20 13:24:57.234 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: FASTQC (MUT_rep2); status: COMPLETED; exit: 0; error: -; workDir: /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/bb/ec14ab52d54e7707ccd296f48fc5f8]
+Apr-20 13:24:57.239 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-20 13:24:57.240 [Task submitter] INFO  nextflow.Session - [d6/936aaf] Submitted process > TRIMMOMATIC (WT_rep1)
+Apr-20 13:24:59.401 [Actor Thread 2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SPADES (1); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba create --yes --quiet --prefix /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-c6473d1636eff97bcfa259a23864cad0 bioconda::spades=3.15.5 python=3.8
+  status : 1
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+    warning  libmamba The specification of the environment does not seem solvable in your current setup.
+    warning  libmamba For instance, packages from different channels might be specified,
+    warning  libmamba whilst your current configuration might not allow their resolution.
+    warning  libmamba 
+    warning  libmamba If it is the case, you need to either:
+    warning  libmamba  - adapt the channel ordering (e.g. by reordering the `-c` flags in your command line)
+    warning  libmamba  - use the flexible channel priority (e.g. using `--channel-priority flexible` in your command line)
+    warning  libmamba 
+    warning  libmamba For reference, see this piece of documentation on channel priority:
+    warning  libmamba https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html#strict-channel-priority
+    error    libmamba Could not solve for environment specs
+        The following package could not be installed
+        └─ spades =3.15.5 * is not installable because it requires
+           └─ python >3.9 * but there are no viable options
+              ├─ python [3.10.10|3.10.11|...|3.9.23] would require
+              │  ├─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 [=7.3.11 *|=7.3.12 *|=7.3.13 *|=7.3.15 *|=7.3.9 *] but there are no viable options
+              │     ├─ pypy3.9 [7.3.11|7.3.12|7.3.13|7.3.15|7.3.9] would require
+              │     │  └─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │     └─ pypy3.9 [7.3.8|7.3.9] would require
+              │        └─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.12|3.11.13|...|3.14.0] would require
+              │  └─ libffi >=3.4.6,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.14|3.11.15|...|3.14.4] would require
+              │  └─ libffi >=3.5.2,<3.6.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.14.0rc1|3.14.0rc2|3.14.0rc3] would require
+              │  └─ _python_rc =* *, which does not exist (perhaps a missing channel);
+              ├─ python [3.10.0|3.10.1|...|3.9.9] would require
+              │  ├─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 =7.3.8 *, which cannot be installed (as previously explained);
+              ├─ python [3.9.1|3.9.2|...|3.9.7] would require
+              │  └─ libffi >=3.3,<3.4.0a0 *, which conflicts with any installable versions previously reported;
+              └─ python [3.10.0|3.10.10|...|3.9.7] conflicts with any installable versions previously reported.
+    critical libmamba Could not solve for environment specs
+
+Apr-20 13:24:59.417 [Actor Thread 2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'SPADES (1)'
+
+Caused by:
+  Failed to create Conda environment
+    command: mamba create --yes --quiet --prefix /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-c6473d1636eff97bcfa259a23864cad0 bioconda::spades=3.15.5 python=3.8
+    status : 1
+    message:
+      warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+          
+      warning  libmamba Please make sure you understand Anaconda Terms of Services.
+          
+      warning  libmamba See: https://legal.anaconda.com/policies/en/
+      warning  libmamba The specification of the environment does not seem solvable in your current setup.
+      warning  libmamba For instance, packages from different channels might be specified,
+      warning  libmamba whilst your current configuration might not allow their resolution.
+      warning  libmamba 
+      warning  libmamba If it is the case, you need to either:
+      warning  libmamba  - adapt the channel ordering (e.g. by reordering the `-c` flags in your command line)
+      warning  libmamba  - use the flexible channel priority (e.g. using `--channel-priority flexible` in your command line)
+      warning  libmamba 
+      warning  libmamba For reference, see this piece of documentation on channel priority:
+      warning  libmamba https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html#strict-channel-priority
+      error    libmamba Could not solve for environment specs
+          The following package could not be installed
+          └─ spades =3.15.5 * is not installable because it requires
+             └─ python >3.9 * but there are no viable options
+                ├─ python [3.10.10|3.10.11|...|3.9.23] would require
+                │  ├─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+                │  └─ pypy3.9 [=7.3.11 *|=7.3.12 *|=7.3.13 *|=7.3.15 *|=7.3.9 *] but there are no viable options
+                │     ├─ pypy3.9 [7.3.11|7.3.12|7.3.13|7.3.15|7.3.9] would require
+                │     │  └─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+                │     └─ pypy3.9 [7.3.8|7.3.9] would require
+                │        └─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+                ├─ python [3.11.12|3.11.13|...|3.14.0] would require
+                │  └─ libffi >=3.4.6,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+                ├─ python [3.11.14|3.11.15|...|3.14.4] would require
+                │  └─ libffi >=3.5.2,<3.6.0a0 *, which conflicts with any installable versions previously reported;
+                ├─ python [3.14.0rc1|3.14.0rc2|3.14.0rc3] would require
+                │  └─ _python_rc =* *, which does not exist (perhaps a missing channel);
+                ├─ python [3.10.0|3.10.1|...|3.9.9] would require
+                │  ├─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+                │  └─ pypy3.9 =7.3.8 *, which cannot be installed (as previously explained);
+                ├─ python [3.9.1|3.9.2|...|3.9.7] would require
+                │  └─ libffi >=3.3,<3.4.0a0 *, which conflicts with any installable versions previously reported;
+                └─ python [3.10.0|3.10.10|...|3.9.7] conflicts with any installable versions previously reported.
+      critical libmamba Could not solve for environment specs
+
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba create --yes --quiet --prefix /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-c6473d1636eff97bcfa259a23864cad0 bioconda::spades=3.15.5 python=3.8
+  status : 1
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+    warning  libmamba The specification of the environment does not seem solvable in your current setup.
+    warning  libmamba For instance, packages from different channels might be specified,
+    warning  libmamba whilst your current configuration might not allow their resolution.
+    warning  libmamba 
+    warning  libmamba If it is the case, you need to either:
+    warning  libmamba  - adapt the channel ordering (e.g. by reordering the `-c` flags in your command line)
+    warning  libmamba  - use the flexible channel priority (e.g. using `--channel-priority flexible` in your command line)
+    warning  libmamba 
+    warning  libmamba For reference, see this piece of documentation on channel priority:
+    warning  libmamba https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html#strict-channel-priority
+    error    libmamba Could not solve for environment specs
+        The following package could not be installed
+        └─ spades =3.15.5 * is not installable because it requires
+           └─ python >3.9 * but there are no viable options
+              ├─ python [3.10.10|3.10.11|...|3.9.23] would require
+              │  ├─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 [=7.3.11 *|=7.3.12 *|=7.3.13 *|=7.3.15 *|=7.3.9 *] but there are no viable options
+              │     ├─ pypy3.9 [7.3.11|7.3.12|7.3.13|7.3.15|7.3.9] would require
+              │     │  └─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │     └─ pypy3.9 [7.3.8|7.3.9] would require
+              │        └─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.12|3.11.13|...|3.14.0] would require
+              │  └─ libffi >=3.4.6,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.14|3.11.15|...|3.14.4] would require
+              │  └─ libffi >=3.5.2,<3.6.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.14.0rc1|3.14.0rc2|3.14.0rc3] would require
+              │  └─ _python_rc =* *, which does not exist (perhaps a missing channel);
+              ├─ python [3.10.0|3.10.1|...|3.9.9] would require
+              │  ├─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 =7.3.8 *, which cannot be installed (as previously explained);
+              ├─ python [3.9.1|3.9.2|...|3.9.7] would require
+              │  └─ libffi >=3.3,<3.4.0a0 *, which conflicts with any installable versions previously reported;
+              └─ python [3.10.0|3.10.10|...|3.9.7] conflicts with any installable versions previously reported.
+    critical libmamba Could not solve for environment specs
+
+	at nextflow.conda.CondaCache.getCachePathFor(CondaCache.groovy:383)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskRun.getCondaEnv0(TaskRun.groovy:672)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1339)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1094)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:97)
+	at nextflow.processor.TaskRun.this$dist$invoke$1(TaskRun.groovy)
+	at nextflow.processor.TaskRun$1.methodMissing(TaskRun.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaClassImpl.invokeMissingMethod(MetaClassImpl.java:924)
+	at groovy.lang.MetaClassImpl.invokePropertyOrMissing(MetaClassImpl.java:1419)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1341)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1094)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskRun$1.apply(TaskRun.groovy:663)
+	at nextflow.processor.TaskRun$1.apply(TaskRun.groovy)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1724)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskRun.getCondaEnv(TaskRun.groovy:660)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskProcessor.createTaskHashKey(TaskProcessor.groovy:2065)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskProcessor.invokeTask(TaskProcessor.groovy:687)
+	at nextflow.processor.InvokeTaskAdapter.call(InvokeTaskAdapter.groovy:52)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor.access$001(ForkingDataflowOperatorActor.java:35)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor$1.run(ForkingDataflowOperatorActor.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba create --yes --quiet --prefix /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-c6473d1636eff97bcfa259a23864cad0 bioconda::spades=3.15.5 python=3.8
+  status : 1
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+    warning  libmamba The specification of the environment does not seem solvable in your current setup.
+    warning  libmamba For instance, packages from different channels might be specified,
+    warning  libmamba whilst your current configuration might not allow their resolution.
+    warning  libmamba 
+    warning  libmamba If it is the case, you need to either:
+    warning  libmamba  - adapt the channel ordering (e.g. by reordering the `-c` flags in your command line)
+    warning  libmamba  - use the flexible channel priority (e.g. using `--channel-priority flexible` in your command line)
+    warning  libmamba 
+    warning  libmamba For reference, see this piece of documentation on channel priority:
+    warning  libmamba https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html#strict-channel-priority
+    error    libmamba Could not solve for environment specs
+        The following package could not be installed
+        └─ spades =3.15.5 * is not installable because it requires
+           └─ python >3.9 * but there are no viable options
+              ├─ python [3.10.10|3.10.11|...|3.9.23] would require
+              │  ├─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 [=7.3.11 *|=7.3.12 *|=7.3.13 *|=7.3.15 *|=7.3.9 *] but there are no viable options
+              │     ├─ pypy3.9 [7.3.11|7.3.12|7.3.13|7.3.15|7.3.9] would require
+              │     │  └─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │     └─ pypy3.9 [7.3.8|7.3.9] would require
+              │        └─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.12|3.11.13|...|3.14.0] would require
+              │  └─ libffi >=3.4.6,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.14|3.11.15|...|3.14.4] would require
+              │  └─ libffi >=3.5.2,<3.6.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.14.0rc1|3.14.0rc2|3.14.0rc3] would require
+              │  └─ _python_rc =* *, which does not exist (perhaps a missing channel);
+              ├─ python [3.10.0|3.10.1|...|3.9.9] would require
+              │  ├─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 =7.3.8 *, which cannot be installed (as previously explained);
+              ├─ python [3.9.1|3.9.2|...|3.9.7] would require
+              │  └─ libffi >=3.3,<3.4.0a0 *, which conflicts with any installable versions previously reported;
+              └─ python [3.10.0|3.10.10|...|3.9.7] conflicts with any installable versions previously reported.
+    critical libmamba Could not solve for environment specs
+
+	at nextflow.conda.CondaCache.runCommand(CondaCache.groovy:331)
+	at nextflow.conda.CondaCache.createLocalCondaEnv0(CondaCache.groovy:302)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1339)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1094)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.doCall(CondaCache.groovy:252)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.call(CondaCache.groovy)
+	at nextflow.file.FileMutex.lock(FileMutex.groovy:106)
+	at nextflow.conda.CondaCache.createLocalCondaEnv(CondaCache.groovy:252)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1339)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1094)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.doCall(CondaCache.groovy:360)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.call(CondaCache.groovy)
+	at groovyx.gpars.dataflow.LazyDataflowVariable$1.run(LazyDataflowVariable.java:70)
+	... 3 common frames omitted
+Apr-20 13:24:59.434 [Actor Thread 2] DEBUG nextflow.Session - Session aborted -- Cause: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba create --yes --quiet --prefix /Users/ameyagarwal/Desktop/Assignments/CompGenNextflow/Nextflow-functionalities/work/conda/env-c6473d1636eff97bcfa259a23864cad0 bioconda::spades=3.15.5 python=3.8
+  status : 1
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+    warning  libmamba The specification of the environment does not seem solvable in your current setup.
+    warning  libmamba For instance, packages from different channels might be specified,
+    warning  libmamba whilst your current configuration might not allow their resolution.
+    warning  libmamba 
+    warning  libmamba If it is the case, you need to either:
+    warning  libmamba  - adapt the channel ordering (e.g. by reordering the `-c` flags in your command line)
+    warning  libmamba  - use the flexible channel priority (e.g. using `--channel-priority flexible` in your command line)
+    warning  libmamba 
+    warning  libmamba For reference, see this piece of documentation on channel priority:
+    warning  libmamba https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-channels.html#strict-channel-priority
+    error    libmamba Could not solve for environment specs
+        The following package could not be installed
+        └─ spades =3.15.5 * is not installable because it requires
+           └─ python >3.9 * but there are no viable options
+              ├─ python [3.10.10|3.10.11|...|3.9.23] would require
+              │  ├─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 [=7.3.11 *|=7.3.12 *|=7.3.13 *|=7.3.15 *|=7.3.9 *] but there are no viable options
+              │     ├─ pypy3.9 [7.3.11|7.3.12|7.3.13|7.3.15|7.3.9] would require
+              │     │  └─ libffi >=3.4,<4.0a0 *, which conflicts with any installable versions previously reported;
+              │     └─ pypy3.9 [7.3.8|7.3.9] would require
+              │        └─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.12|3.11.13|...|3.14.0] would require
+              │  └─ libffi >=3.4.6,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.11.14|3.11.15|...|3.14.4] would require
+              │  └─ libffi >=3.5.2,<3.6.0a0 *, which conflicts with any installable versions previously reported;
+              ├─ python [3.14.0rc1|3.14.0rc2|3.14.0rc3] would require
+              │  └─ _python_rc =* *, which does not exist (perhaps a missing channel);
+              ├─ python [3.10.0|3.10.1|...|3.9.9] would require
+              │  ├─ libffi >=3.4.2,<3.5.0a0 *, which conflicts with any installable versions previously reported;
+              │  └─ pypy3.9 =7.3.8 *, which cannot be installed (as previously explained);
+              ├─ python [3.9.1|3.9.2|...|3.9.7] would require
+              │  └─ libffi >=3.3,<3.4.0a0 *, which conflicts with any installable versions previously reported;
+              └─ python [3.10.0|3.10.10|...|3.9.7] conflicts with any installable versions previously reported.
+    critical libmamba Could not solve for environment specs
+
+Apr-20 13:24:59.459 [Actor Thread 2] DEBUG nextflow.Session - The following nodes are still active:
+[process] SEQKIT_STATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SPADES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Apr-20 13:24:59.483 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-20 13:24:59.485 [Actor Thread 2] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Apr-20 13:24:59.545 [Actor Thread 2] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=6; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=41.2s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=4; peakMemory=8 GB; ]
+Apr-20 13:24:59.733 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-20 13:24:59.733 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-20 13:24:59.736 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=6; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=41.2s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=4; peakMemory=8 GB; ]
+Apr-20 13:24:59.747 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-20 13:24:59.773 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

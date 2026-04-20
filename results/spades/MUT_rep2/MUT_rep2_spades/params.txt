@@ -1,0 +1,37 @@
+Command line: /content/work/conda/env-2c12a6665972de87847ebfc9a66dc513/bin/spades.py	-1	/content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_R1_trimmed.fastq.gz	-2	/content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_R2_trimmed.fastq.gz	-t	2	-o	/content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_spades	
+
+System information:
+  SPAdes version: 3.15.5
+  Python version: 3.9.23
+  OS: Linux-6.6.113+-x86_64-with-glibc2.35
+
+Output dir: /content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_spades
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_R1_trimmed.fastq.gz']
+      right reads: ['/content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_R2_trimmed.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /content/work/64/cf44c187aea51d6dc6926a4acd1b8b/MUT_rep2_spades/tmp
+  Threads: 2
+  Memory limit (in Gb): 12
+

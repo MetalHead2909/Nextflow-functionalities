@@ -1,0 +1,3 @@
+file                         format  type  num_seqs    sum_len  min_len  avg_len  max_len
+WT_rep1_R1_trimmed.fastq.gz  FASTQ   DNA     46,906  4,699,063       36    100.2      101
+WT_rep1_R2_trimmed.fastq.gz  FASTQ   DNA     46,906  4,689,815       36      100      101

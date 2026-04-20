@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2,condition,single_end
+WT_rep1,data/SRR6357070_1.fastq.gz,data/SRR6357070_2.fastq.gz,wildtype,false
+WT_rep2,data/SRR6357071_1.fastq.gz,data/SRR6357071_2.fastq.gz,wildtype,false
+MUT_rep1,data/SRR6357072_1.fastq.gz,data/SRR6357072_2.fastq.gz,mutant,false
+MUT_rep2,data/SRR6357073_1.fastq.gz,data/SRR6357073_2.fastq.gz,mutant,false

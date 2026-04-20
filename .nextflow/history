@@ -1,0 +1,41 @@
+2026-04-20 01:16:59	-	distraught_raman	-	a95fe93fa809a5ee7d7405eb0f2d257a	2bbcc65d-443f-440c-afbd-d9b5ca0f0565	nextflow run main.nf -profile conda,test -resume
+2026-04-20 01:17:31	-	sad_wright	-	a95fe93fa809a5ee7d7405eb0f2d257a	2bbcc65d-443f-440c-afbd-d9b5ca0f0565	nextflow run main.nf -profile conda,test -resume
+2026-04-20 01:18:20	-	astonishing_mclean	-	3588c66fd07a71a6122b621a8be22bbc	2bbcc65d-443f-440c-afbd-d9b5ca0f0565	nextflow run main.nf -profile conda,test -resume
+2026-04-20 01:32:20	-	desperate_albattani	-	7bce8851b895e8e258c677ac50b87b41	af47a3ee-4c61-4d28-a755-a204088ab8fc	nextflow run main.nf -profile conda,test -preview
+2026-04-20 01:32:47	-	hungry_curie	-	7bce8851b895e8e258c677ac50b87b41	0692ec39-9bbb-4a49-a422-0c5b63ffca71	nextflow run main.nf -profile conda,test -preview
+2026-04-20 01:36:50	-	astonishing_sinoussi	-	7bce8851b895e8e258c677ac50b87b41	216d2ffd-d046-41e9-adf4-4c5df7da6cdd	nextflow run main.nf -profile conda,test -preview
+2026-04-20 01:54:13	-	suspicious_agnesi	-	087cb852028cd670ec7da1b2d1ac4bb6	d3d79721-9fda-4e24-ac25-2e024d9094ae	nextflow run main.nf -profile conda,test -preview
+2026-04-20 01:54:59	3s	ecstatic_cray	OK	d54b81d8e9b75d5edd5cba8f4477da23	77b4f109-fc85-4fa8-b903-ef937ab57048	nextflow run main.nf -profile conda,test -preview
+2026-04-20 01:55:26	2.7s	jovial_darwin	ERR	d54b81d8e9b75d5edd5cba8f4477da23	64618b4c-2172-46af-82ed-ebe0e748f61f	nextflow run main.nf -profile conda,test
+2026-04-20 01:55:51	1m	amazing_kay	ERR	d54b81d8e9b75d5edd5cba8f4477da23	d4c08ad0-2f3c-4aa0-b59f-371b12bf26a6	nextflow run main.nf -profile conda,test
+2026-04-20 01:58:45	3.3s	amazing_keller	ERR	d54b81d8e9b75d5edd5cba8f4477da23	44eee4e2-b1ec-4125-9e65-89a5abc980a6	nextflow run main.nf -profile conda,test
+2026-04-20 02:00:54	3.3s	stupefied_morse	ERR	d54b81d8e9b75d5edd5cba8f4477da23	42371d90-960e-47e2-814e-7f5e3438757a	nextflow run main.nf -profile conda,test
+2026-04-20 02:02:06	3.3s	chaotic_maxwell	ERR	d54b81d8e9b75d5edd5cba8f4477da23	86c2e8b3-ed6b-413b-bb50-2563bcedc3da	nextflow run main.nf -profile conda,test
+2026-04-20 02:05:39	3.5s	confident_dalembert	ERR	d54b81d8e9b75d5edd5cba8f4477da23	ff27b404-9261-4bc9-97f7-e21bc4039b5c	nextflow run main.nf -profile conda,test
+2026-04-20 02:06:20	3.2s	voluminous_dalembert	ERR	d54b81d8e9b75d5edd5cba8f4477da23	c0c3eee1-30f2-4ce7-a166-fddbb08ba7e8	nextflow run main.nf -profile conda,test
+2026-04-20 02:09:09	50.7s	prickly_carlsson	ERR	d54b81d8e9b75d5edd5cba8f4477da23	290b32a7-25b5-45ec-82a1-76eb9f23baaa	nextflow run main.nf -profile conda,test
+2026-04-20 12:32:06	-	kickass_heisenberg	-	f2639aa1df50a362fe5336432361968d	df36fc0a-8ee8-4578-a755-f2c647b775f7	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 12:36:38	-	scruffy_almeida	-	f2639aa1df50a362fe5336432361968d	11e9044e-c4de-4eda-b722-6a2ee4aae539	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 12:40:36	-	lethal_swanson	-	833d32703650fcb4f3a2f96e9bc2c229	0237775c-b1c7-4bdd-be25-01ca08ce6474	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 12:45:49	-	nasty_laplace	-	2f8bd3e1934bff23b1b8afd5171854eb	5ddee5b7-6204-4947-8365-c611f998ea7f	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 12:46:52	-	nice_hamilton	-	c273a772df885e3d2d8c50e1d1ed55e7	1fb8bc58-8d3d-4d75-b1e5-5e81e6945bdd	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 12:51:53	-	romantic_pike	-	cfae8741df9e6e7c3bd9e947558716c1	637e1b21-9204-45d0-a46e-8777cf797adf	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:01:37	-	dreamy_linnaeus	-	9760d18d0f1aef84ae30accdff221ccb	a46e93fe-d954-4cef-bbb9-0369dc916dfd	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:04:15	-	admiring_stonebraker	-	69c2d7ed5c5b71c86a7ea6e67c755745	8aad4511-f05d-41cc-88b9-a5f20c0d09eb	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:05:05	-	fervent_lamarr	-	e3d5506980c83a0fbd4dc4e2c0a49f53	af8866ea-c7f4-4452-a92a-fea7fece0aef	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:10:55	-	kickass_shockley	-	3d4734fc10d8a1e7bf48d17a92d5db89	bda0629e-8000-4f47-9459-3efecf4ef758	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:14:18	-	gigantic_varahamihira	-	3d4734fc10d8a1e7bf48d17a92d5db89	d13e1e15-96aa-43c5-b4dd-cfdba8d1c493	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:14:35	9.2s	fervent_mandelbrot	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	067c4404-e119-4674-a7d6-7869c5711bc9	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:16:57	38.9s	agitated_morse	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	b0553b11-38d7-4bde-bfd4-53c33b23e213	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:20:16	38.4s	cheeky_linnaeus	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	49405648-df86-4a53-875c-c7524adf068a	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:22:57	21s	shrivelled_mirzakhani	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	8de384d0-f08d-4ea5-b7d7-f38058b85ac2	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:23:54	15.8s	loving_varahamihira	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	cb2a3d43-77fa-4782-b31f-7bdca3ce6520	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:24:44	15.8s	adoring_ride	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	25a515d0-1aa2-4d5e-9eab-87255f50d0ee	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:26:19	15.5s	angry_shaw	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	14764db2-4f08-472f-99be-509ef9a2aa64	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:28:32	15.6s	amazing_hoover	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	1afa28a1-cc9a-44a8-a104-65e471a25a2d	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:29:41	2.8s	disturbed_rosalind	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	77ac26e2-218e-4e31-b78e-ce1413314b31	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:30:28	20s	nostalgic_cori	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	04b9685a-18e6-44e5-a2a0-5708eb52683d	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:32:58	27.2s	goofy_carson	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	d0b9e034-512a-4431-b812-7c45b22f64e4	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:33:40	41s	scruffy_hodgkin	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	85b45c1f-bba0-421f-aebf-6597c2df2759	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:35:05	18.7s	hungry_angela	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	da0924de-c646-4dfd-87b3-923ad658e0ad	nextflow run main.nf -profile conda -process.cpus 4
+2026-04-20 13:35:53	55.5s	jolly_moriondo	ERR	3d4734fc10d8a1e7bf48d17a92d5db89	241ae8c4-d15d-488c-95d9-06f8998195a0	nextflow run main.nf -profile conda -process.cpus 4

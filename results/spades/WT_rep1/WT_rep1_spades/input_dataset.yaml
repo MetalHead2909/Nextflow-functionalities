@@ -1,0 +1,7 @@
+- "left reads":
+  - "/content/work/7d/8b4d28461f42820083195a20eab72d/WT_rep1_R1_trimmed.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/content/work/7d/8b4d28461f42820083195a20eab72d/WT_rep1_R2_trimmed.fastq.gz"
+  "type": "paired-end"

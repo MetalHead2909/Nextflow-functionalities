@@ -25,6 +25,8 @@ nextflow run main.nf -profile conda -with-dag dag.png -process.cpus 2
 Test datasets are included in the repository under:
 ```data/```
 
+The root folder has ```samplesheet.csv```
+
 These consist of paired-end *S. cerevisiae* RNA-seq FASTQ files used for pipeline validation and benchmarking.
 
 ---
